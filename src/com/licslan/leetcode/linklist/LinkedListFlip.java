@@ -22,8 +22,10 @@ public class LinkedListFlip {
         //当前的元素
         ListNode cur = head;
         while (cur != null) {
+
+            //将next 节点先存起来  后面使用
             ListNode next = cur.next;
-            //当前节点的下一个节点本来是指向next的 结果现在就指向了当前节点的前一个节点 这里就实现了翻转
+            //当前节点的下一个节点本来是指向next的 结果现在就指向了当前节点的前一个节点prev 这里就实现了翻转
             // prev --> cur.next --> next   to  cur.next-->prev 此时cur节点的翻转就完成了
             cur.next = prev;
             //prev在下次循环中就已经指向了此时的cur  不断向👉移动
