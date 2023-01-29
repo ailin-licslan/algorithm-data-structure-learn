@@ -1,5 +1,8 @@
 package com.licslan.interview.hot100;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author WEILIN
  * <p>
@@ -14,6 +17,9 @@ package com.licslan.interview.hot100;
  * 数列季刊》为名的一份数学杂志，用于专门刊载这方面的研究成果。
  */
 public class ClimbStairs70 {
+
+
+    // method1 循环写法
 
     public int climbStairs(int n) {
         int[] dp = new int[n + 1];
@@ -33,4 +39,82 @@ public class ClimbStairs70 {
         return dp[n];
 
     }
+
+
+
+    // 置底向上不断累加
+
+    public int climbStairs3(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        if (n == 2) {
+            return 2;
+        }
+        int pre = 2;
+        int prePre = 1;
+        int result = 0;
+
+        for (int i = 3; i < n; i++) {
+
+            result = pre + prePre;
+            prePre = pre;
+            pre = result;
+
+        }
+        return result;
+
+    }
+
+    //method2
+    //f(n) =1 n=1 [1 走一步], f(n)=2 n=2  [1+1 每次走一步,2 一次走两步], f(n)=f(n-1)+f(n-2) n>3
+    //递归写法  leetcode 超时判题 重复计算
+
+    public static int climbStairs2(int n) {
+
+        if (n == 1) {
+            return 1;
+        }
+        if (n == 2) {
+            return 2;
+        }
+
+        return climbStairs2(n - 1) + climbStairs2(n - 2);
+    }
+
+
+    //method2 改进型
+    //f(n) =1 n=1 [1 走一步], f(n)=2 n=2  [1+1 每次走一步,2 一次走两步], f(n)=f(n-1)+f(n-2) n>3
+    //递归写法  置顶向下计算  f(n)=f(n-1)+f(n-2)
+
+    private Map<Integer, Integer> map = new HashMap<>();
+
+    public int climbStairsByMap(int n) {
+
+        if (n == 1) {
+            return 1;
+        }
+        if (n == 2) {
+            return 2;
+        }
+
+        if (map.get(n) != null) {
+            return map.get(n);
+        } else {
+            //递归计算
+            int result = climbStairsByMap(n - 1) + climbStairsByMap(n - 2);
+            //计算出来的值先存一下  避免后续重复计算  O(m)
+            map.put(n, result);
+            return result;
+        }
+
+    }
+
+
+    public static void main(String[] args) {
+
+        int i = climbStairs2(45);
+        System.out.println(i);
+    }
+
 }
