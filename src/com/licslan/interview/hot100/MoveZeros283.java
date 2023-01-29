@@ -56,5 +56,36 @@ public class MoveZeros283 {
             newArray[i] = 0;
         }
 
+
+
+
+
+
     }
+
+
+
+    public void moveZeros4(int[] nums) {
+
+        //1.判断元素个数 只有一个不用移动
+        if (nums == null || nums.length <= 1) {
+            return;
+        }
+
+        //2.定义数组 来装不是0 的数据
+        int index = 0;
+        for (int num : nums) {
+            if ((num != 0)) {
+                nums[index] = num;
+                index++;
+            }
+        }
+
+        //3.从index 开始 后面的值来赋值为0 就行了
+        for (int i = index; i < nums.length; i++) {
+            nums[i] = 0;
+        }
+
+    }
+
 }

@@ -1,4 +1,4 @@
-package com.licslan.interview.hot100;
+package com.licslan.interview.leetcode500;
 
 import java.util.*;
 
@@ -65,16 +65,15 @@ public class FindDisappearedNumbers448 {
 
         int n = nums.length;
         for (int num : nums) {
-
-            //对取模还原本来的值
+            //对取模还原本来的值 找下标
             int x = (num - 1) % n;
             nums[x] += n;
-
         }
 
         List<Integer> result = new ArrayList<>();
         for (int i = 0; i < n; i++) {
 
+            //找到小于n的就是消失的数字
             if (nums[i] <= n) {
                 result.add(i + 1);
             }
