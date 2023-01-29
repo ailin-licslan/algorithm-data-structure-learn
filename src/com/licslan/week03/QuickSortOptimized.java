@@ -41,6 +41,7 @@ public class QuickSortOptimized {
     }
 
     // 在 sort2 中，我们只创建一个 Random 类的对象
+
     public static <E extends Comparable<E>> void sort2(E[] arr){
 
         Random rnd = new Random();
