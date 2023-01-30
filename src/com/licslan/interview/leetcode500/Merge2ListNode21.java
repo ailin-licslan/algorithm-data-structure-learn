@@ -7,7 +7,7 @@ import com.licslan.interview.hot100.utils.ListNode;
  * 合并2个有序的链表
  * 将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
  */
-public class Merge2List21 {
+public class Merge2ListNode21 {
 
 
     //1-->2-->5
