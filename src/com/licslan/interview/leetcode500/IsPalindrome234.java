@@ -64,10 +64,10 @@ public class IsPalindrome234 {
         }
         //反转一下链表slow指针此时指向的链表
         slow = reverseList(slow);
+        //重新还原到开始节点
         fast = head;
         //判断2个链表是否相等 以反转后的slow为遍历的链表
         while (slow != null) {
-            assert fast != null;
             if (fast.val != slow.val) {
                 return false;
             }
