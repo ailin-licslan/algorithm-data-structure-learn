@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * LeetCode 专栏  ♥  NO2
  * 给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。
  * <p>
  * 请你将两个数相加，并以相同形式返回一个表示和的链表。
@@ -15,7 +16,7 @@ import java.util.List;
  * <p>
  * 计算 链表长度  不一样长度的链表可以补位成 0 保证链表长度一致  然后竖式相加
  */
-public class Add2Nums2 {
+public class Add2Num02 {
 
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

@@ -1,4 +1,4 @@
-package com.licslan.interview.leetcode500.basestructure;
+package com.licslan.interview.leetcode500.string;
 
 
 import java.util.Collections;
@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @author licslan  中等难度题目
- * 394. 字符串解码
+ * 394. 字符串解码 LeetCode 专栏  ♥  NO394
  * 中等
  * 1.4K
  * 相关企业
