@@ -20,7 +20,7 @@ public class SelectSortTest {
         //外层循环依次循环数组每个下标的元素
         for (int i = 0; i < nums.length; i++) {
 
-            //记录最小值的下标 每个循环开始总是认为第一个元素最小
+            //记录最小值的下标 每次外层循环开始总是认为假设第一个元素最小
             int minIndex = i;
 
             for (int j = i; j < nums.length; j++) {
@@ -42,7 +42,7 @@ public class SelectSortTest {
 
     public static void main(String[] args) {
 
-        int[] test = new int[]{30,20,4,6};
+        int[] test = new int[]{30, 20, 4, 6};
         int[] res = selectSortTest(test);
         String s = Arrays.toString(res);
         System.out.println("========> " + s);
