@@ -1,4 +1,4 @@
-package com.licslan.interview.leetcode500;
+package com.licslan.interview.leetcode500.basestructure;
 
 import java.util.Stack;
 

@@ -1,9 +1,6 @@
-package com.licslan.interview.leetcode500;
+package com.licslan.interview.leetcode500.basestructure;
 
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * @author WEILIN

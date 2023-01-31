@@ -1,8 +1,6 @@
-package com.licslan.interview.leetcode500;
+package com.licslan.interview.leetcode500.basestructure;
 
 import com.licslan.interview.hot100.utils.ListNode;
-
-import java.util.List;
 
 /**
  * @author WEILIN
