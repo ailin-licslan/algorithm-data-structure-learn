@@ -2,6 +2,7 @@ package com.licslan.interview.leetcode500.basestructure;
 
 /**
  * @author WEILIN
+ * LeetCode 专栏  ♥  NO09
  * 判断回文数   121  true  123 false  11211 true
  * 从左到右  和  从右到左一样
  * https://leetcode.cn/problems/palindrome-number/
