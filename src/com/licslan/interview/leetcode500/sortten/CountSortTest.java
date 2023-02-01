@@ -1,7 +1,5 @@
 package com.licslan.interview.leetcode500.sortten;
 
-import com.licslan.week01.array.generic.Array;
-
 import java.util.Arrays;
 
 /**
