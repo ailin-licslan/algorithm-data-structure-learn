@@ -13,6 +13,7 @@ import java.util.Arrays;
 public class InsertSortTest {
 
     public static int[] insertSortTest(int[] nums) {
+
         if (nums.length == 0) {
             return nums;
         }

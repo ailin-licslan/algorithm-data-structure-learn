@@ -1,4 +1,4 @@
-package com.licslan.week05;
+package com.licslan.interview.leetcode500.sortten;
 
 import com.licslan.datastructure.heap.ArrayDynamic;
 
@@ -60,6 +60,7 @@ public class MaxHeap<E extends Comparable<E>> {
     }
 
     //上浮操作
+
     private void siftUp(int i) {
         //如果不满足堆的性质  就还需要对比
         while (i > 0 && data.getIndex(parent(i)).compareTo(data.getIndex(i)) < 0) {

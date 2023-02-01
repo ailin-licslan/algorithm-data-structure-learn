@@ -7,6 +7,7 @@ package com.licslan.interview.leetcode500.sortten;
  */
 public class BubbleSortTest {
 
+    //O(n^2)
 
     public int[] sortBubbleTest(int[] nums) {
         if (nums.length == 0) {

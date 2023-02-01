@@ -35,6 +35,7 @@ public class HeapSort {
 
     //堆排序的优化  以上多开辟一个数组的空间  其实可以实现原地堆排序的  不用多开数组空间  空间复杂度O(1)
     //其实我们将堆最后的元素和最大元素交换位置之后进行siftDown形成新的堆就可以  最后面的元素就是从小到大排好序了
+
     public static <E extends Comparable<E>> void sort2(E[] data){
         if (data.length<=1)return;
         for (int i = (data.length - 1-1)/2; i >=0; i--) {
@@ -49,6 +50,7 @@ public class HeapSort {
     }
 
     //对data[0,n)所形成的最大堆中，索引为 k 的元素 执行siftDown
+
     private static <E extends Comparable<E> > void siftDown(E[] data, int k,int n) {
         //如果左孩子索引比堆元素数量小
         while (2*k+1<n){
