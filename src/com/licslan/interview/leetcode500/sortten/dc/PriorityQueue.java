@@ -1,4 +1,4 @@
-package com.licslan.week05;
+package com.licslan.interview.leetcode500.sortten.dc;
 
 import com.licslan.datastructure.heap.MaxHeap;
 import com.licslan.datastructure.queue.QueueQ;

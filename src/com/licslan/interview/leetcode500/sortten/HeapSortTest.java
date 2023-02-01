@@ -1,6 +1,7 @@
 package com.licslan.interview.leetcode500.sortten;
 
 
+import com.licslan.interview.leetcode500.sortten.dc.QueueQ;
 import com.licslan.week00.ArrayGenerator;
 import com.licslan.week05.SortingHelper;
 
@@ -21,7 +22,7 @@ public class HeapSortTest {
     public static <E extends Comparable<E>> void sort(E[] data) {
 
         //其实就是将数组中的元素遍历放到堆里面 再来进行一个排序就可以了
-        MaxHeap<E> maxHeap = new MaxHeap<>();
+        QueueQ.MaxHeap<E> maxHeap = new QueueQ.MaxHeap<>();
 
         //将元素放入最大堆中 O(nlogn)
         for (E e : data) {

@@ -1,4 +1,6 @@
-package com.licslan.week05;
+package com.licslan.interview.leetcode500.sortten.dc;
+
+import com.licslan.week05.Array;
 
 import java.util.Random;
 

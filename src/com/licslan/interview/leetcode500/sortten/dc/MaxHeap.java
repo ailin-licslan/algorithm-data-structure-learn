@@ -1,4 +1,4 @@
-package com.licslan.interview.leetcode500.sortten;
+package com.licslan.interview.leetcode500.sortten.dc;
 
 import com.licslan.datastructure.heap.ArrayDynamic;
 
@@ -126,6 +126,7 @@ public class MaxHeap<E extends Comparable<E>> {
     // 实现方案二：  可以直接将堆顶元素替换以后siftDown 一次O(logn)
 
     //取出堆中最大元素  并且替换成元素e
+
     public E replace(E e) {
         E ret = findMax();
         //替换

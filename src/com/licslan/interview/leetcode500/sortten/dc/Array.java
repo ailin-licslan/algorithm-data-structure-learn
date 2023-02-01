@@ -1,4 +1,4 @@
-package com.licslan.week05;
+package com.licslan.interview.leetcode500.sortten.dc;
 
 
 /**
@@ -14,12 +14,10 @@ public class Array<E> {
      * 其实像一些大型软件或者数据库也是进行业务上面的增删改查 更高级别的抽象了
      */
     //private 不想用户去随便修改我们的属性
-
     private E[] data;//定义一个数组
     private int size;//数组中实际的元素大小
 
     //构造方法 初始化一个空数组  数组大小为capacity
-
     public Array(int capacity) {
         this.data = (E[]) new Object[capacity];
         this.size = 0;
@@ -232,9 +230,8 @@ public class Array<E> {
 
     public Array(E[] arr) {
         data = (E[]) new Object[arr.length];
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++)
             data[i] = arr[i];
-        }
         size = arr.length;
     }
     /**
