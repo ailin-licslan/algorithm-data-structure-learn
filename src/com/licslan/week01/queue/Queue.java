@@ -1,18 +1,28 @@
 package com.licslan.week01.queue;
+
 /**
  * @author LICSLAN 下定决心学算法与数据结构
- * */
+ */
 public interface Queue<E> {
 
     //队列的大小
+
     int getSize();
+
     //队列是否为空
+
     boolean isEmpty();
+
     //向队列尾部添加元素
+
     void enqueue(E o);
+
     //从队首取出元素
+
     E dequeue();
+
     //获取队首的那个元素
+
     E getFront();
 
     /**
