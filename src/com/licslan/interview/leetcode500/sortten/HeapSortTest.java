@@ -8,8 +8,9 @@ import com.licslan.week05.SortingHelper;
 import java.util.Arrays;
 
 /**
- * @author LICSLAN 下定决心学算法与数据结构
- * 参考慕课网讲解 需要花时间理解
+ * @author LICSLAN 下定决心学算法与数据结构   面试常考快速 归并 堆排序
+ * <p>
+ * 参考慕课网讲解 需要花时间理解 或者b站写法
  */
 public class HeapSortTest {
 

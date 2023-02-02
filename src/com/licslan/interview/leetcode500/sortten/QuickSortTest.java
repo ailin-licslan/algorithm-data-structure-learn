@@ -3,7 +3,7 @@ package com.licslan.interview.leetcode500.sortten;
 import java.util.Arrays;
 
 /**
- * @author licslan
+ * @author licslan   面试常考快速 归并 堆排序
  * 快速排序对冒泡排序的一种优化 同时还有分治的思想在里面
  * 和一个基准数比较  大的放左边  小的放右边  排好之后   将分区的左右的2部分数据再安装相同的方法进行比较 ...
  * 重复上面的步骤
@@ -22,13 +22,14 @@ public class QuickSortTest {
     //JDK DualPivotQuicksort.sort 双轴快速排序 一般时间上可以提升10%的效率 里面是选了2个基准数 分了3个部分
 
     public static int[] sortArray(int[] nums) {
+        //Arrays.sort(nums);
         return sort(nums, 0, nums.length - 1);
     }
 
     private static int[] sort(int[] array, int start, int end) {
 
         if (array.length < 1 || start < 0 || end > array.length || start > end) {
-            return null;
+            return new int[0];
         }
 
         //数据分割成2个部分  从哪分区的指示器  调用快速排序的分区方法
