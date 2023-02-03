@@ -3,7 +3,7 @@ package com.licslan.interview.leetcode500.basestructure;
 import com.licslan.interview.hot100.utils.ListNode;
 
 /**
- * @author WEILIN
+ * @author WEILIN  leetcode21 && 剑指offer 25
  * 合并2个有序的链表
  * 将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
  */

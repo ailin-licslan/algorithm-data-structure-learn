@@ -4,7 +4,7 @@ package com.licslan.interview.leetcode500.dynamicprogramming;
  * @author licslan
  * 动态规划 https://www.bilibili.com/video/BV11Y4y1q7YA?p=60&spm_id_from=pageDriver
  * &vd_source=bbb985ceadc8e3199d1d5a091b58155b
- * p55-p60 需要重点重复学习
+ * p55-p60 需要重点重复学习  理解动态规划题目
  */
 public class Main {
 
@@ -20,10 +20,14 @@ public class Main {
     //称解决多阶段决策最优化过程为动态规划方法
 
 
-
     //动态规划  与  分治法  都是把一个大问题拆分为一个小问题
 
     //动态规划里面小问题的解不是相互独立的 可能会影响下一个小问题的解，小的问题的解会保存起来，不用重复去计算
     //分治法里面拆分的小问题的解都是相互独立的，可以并行去求解，求出小问题的解 再合并起来得到最终解
 
+
+    //什么样的问题适合用动态规划  多阶段决策最优解模型
+    //1.最优子结构
+    //2.无后效性
+    //3.重复子问题
 }
