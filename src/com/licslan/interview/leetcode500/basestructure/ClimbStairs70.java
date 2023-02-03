@@ -25,6 +25,8 @@ public class ClimbStairs70 {
     public int climbStairs(int n) {
         int[] dp = new int[n + 1];
 
+
+        //注意爬楼梯 这里都是1  而509里面一个是0,dp[0] = 0  一个是1,dp[1] = 1
         dp[0] = 1;
         dp[1] = 1;
 
