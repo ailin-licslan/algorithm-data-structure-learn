@@ -34,8 +34,9 @@ public class DelArrayDup26 {
 
     //首先注意数组是有序的，那么重复的元素一定会相邻。
     //要求删除重复元素，实际上就是将不重复的元素移到数组的左侧
+    //双指针写法
 
-    public int removeDuplicates(int[] nums) {
+    public static int removeDuplicates(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
         }
@@ -56,6 +57,26 @@ public class DelArrayDup26 {
             q++;
         }
         return p + 1;
+    }
+
+
+    public static int removeDuplicates2(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[i] != nums[j]) {
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i + 1;
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(removeDuplicates2(new int[]{0, 1, 2, 2, 2, 4}));
     }
 
 
