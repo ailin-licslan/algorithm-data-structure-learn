@@ -13,9 +13,9 @@ import java.util.Queue;
  * 1.5K
  * 相关企业
  * 给定一个二叉树，找出其最大深度。
- *
+ * <p>
  * 二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
- *
+ * <p>
  * 说明: 叶子节点是指没有子节点的节点。
  */
 public class MaxDepth104 {
@@ -31,6 +31,8 @@ public class MaxDepth104 {
 
     }
 
+
+    //BFS
 
     public int maxDepthWithQueue(TreeNode root) {
 
@@ -59,5 +61,43 @@ public class MaxDepth104 {
 
         return depth;
 
+    }
+
+
+//     DFS 深度优先
+
+    public int maxDepth2(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        //1.左孩子和右孩子都为空的情况，说明到达了叶子节点，直接返回1即可
+        if (root.left == null && root.right == null) {
+            return 1;
+        }
+
+        int max = Integer.MIN_VALUE;
+        if (root.left != null) {
+            max = Math.max(maxDepth2(root.left), max);
+        }
+
+        if (root.right != null) {
+            max = Math.max(maxDepth2(root.right), max);
+        }
+
+        return max + 1;
+
+    }
+
+
+    //DFS
+
+    public int maxDepth3(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = maxDepth(root.left);
+        int right = maxDepth(root.right);
+        return Math.max(left, right) + 1;
     }
 }

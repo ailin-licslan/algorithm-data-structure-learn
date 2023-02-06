@@ -23,6 +23,11 @@ public class TreeNode {
      */
     public TreeNode right;
 
+    /**
+    leetcode 111
+    */
+    public int deep;
+
     TreeNode() {
     }
 
