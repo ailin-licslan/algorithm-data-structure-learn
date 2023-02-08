@@ -30,8 +30,8 @@ public class StringSearch {
 
     public static void main(String[] args) {
 
-        String pat = new String("aabca");
-        String txt = new String ("aabcad");
+        String pat = "aabca";
+        String txt = "aabcad";
         System.out.println(search(pat,txt));
     }
 }
