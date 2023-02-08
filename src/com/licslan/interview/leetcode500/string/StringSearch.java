@@ -6,7 +6,7 @@ package com.licslan.interview.leetcode500.string;
  */
 public class StringSearch {
 
-    //BF {a,bc,a}  {a,a,bc,a,d}
+    //BF  Brute Force {a,bc,a}  {a,a,bc,a,d}
 
 
     public static int search(String pat, String txt) {
@@ -28,10 +28,14 @@ public class StringSearch {
         return -1;
     }
 
+    //BM Boyer-Moore
+
+    //KMP Knuth-Morris-Pratt
+
     public static void main(String[] args) {
 
-        String pat = "aabca";
+        String pat = "abca";
         String txt = "aabcad";
-        System.out.println(search(pat,txt));
+        System.out.println(search(pat, txt));
     }
 }
