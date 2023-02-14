@@ -1,5 +1,7 @@
 package com.licslan.interview.leetcode500.basestructure;
 
+import java.util.Arrays;
+
 /**
  * @author licslan
  * <p>
@@ -39,4 +41,26 @@ public class LongestCommonPrefix14 {
         }
         return s;
     }
+
+    public static void main(String[] args) {
+
+        int[] ints = plusOne(new int[]{9, 9, 9});
+        for (int anInt : ints) {
+            System.out.println(anInt);
+        }
+    }
+
+    public static int[] plusOne(int[] digits) {
+        for (int i = digits.length - 1; i >= 0; i--) {
+            digits[i]++;
+            digits[i] = digits[i] % 10;
+            System.out.println("============>"+digits[i]);
+            if (digits[i] != 0) return digits;
+        }
+        digits = new int[digits.length + 1];
+        digits[0] = 1;
+        return digits;
+    }
+
+
 }
