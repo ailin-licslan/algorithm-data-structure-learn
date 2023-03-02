@@ -1,5 +1,6 @@
 package com.licslan.interview.leetcode500.basestructure;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -22,7 +23,7 @@ import java.util.HashMap;
 public class Sum2Num01 {
 
 
-    private static int[] numList = new int[]{1, 3, 4, 5, 6};
+    private static int[] numList = new int[]{3, 2, 4};
 
     /**
      * 输入：nums = [2,7,11,15], target = 9
@@ -76,8 +77,30 @@ public class Sum2Num01 {
     }
 
 
+    private static int[] getIndex3(int[] numList, int target) {
+
+        int[] targetIndex = new int[2];
+        Arrays.sort(numList);
+        //双指针写法
+        int left = 0,right = numList.length-1;
+        while (left<right){
+            if(numList[left]+numList[right]==target){
+                targetIndex[0]=right;
+                targetIndex[1]=left;
+                return targetIndex;
+            }
+            else if(numList[left]+numList[right]<target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+        return targetIndex;
+    }
+
+
     public static void main(String[] args) {
-        int[] index = getIndex(numList, 11);
+        int[] index = getIndex3(numList, 6);
         for (int i : index) {
             System.out.println(i);
         }
