@@ -37,7 +37,7 @@ public class Lc19removeNthFromEnd {
             slow = slow.next;
         }
 
-        //找到倒数的第N个节点了  将该节点本来的要指向的位置 指向下下个节点
+        //找到倒数的第N个节点了  此时slow指向的节点的下一个节点就是要删除的节点
         slow.next = slow.next.next;
 
         //返回删除后的节点的下一个节点即可
