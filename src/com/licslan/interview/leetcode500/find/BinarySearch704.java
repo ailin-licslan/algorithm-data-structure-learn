@@ -13,6 +13,7 @@ public class BinarySearch704 {
 
         //循环不变量 nums[l,r]范围中不断去查找target
         while (l <= r) {
+            //找到中间位置元素下标
             int mid = l + (r - l) / 2;
             if (target == nums[mid]) {
                 return mid;
@@ -37,6 +38,7 @@ public class BinarySearch704 {
         if (l > r) {
             return -1;
         }
+        //找到中间位置元素下标
         int mid = l + (r - l) / 2;
         //正好相等
         if (data[mid] == target) {

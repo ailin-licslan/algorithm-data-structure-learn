@@ -1,5 +1,8 @@
 package com.licslan.interview.hot100;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author WEILIN
  * 求2数之和
@@ -59,4 +62,33 @@ public class Sum2Num01 {
         System.out.println(index);
     }
 
+    public static int[] twoNumSum(int[] nums, int target) {
+
+        //5   1 2 3
+
+        Map<Integer, Integer> storeNums = new HashMap<>(nums.length, 1);
+
+        int[] result = new int[2];
+
+        for (int i = 0; i < nums.length; i++) {
+
+            //i = 2  nums[2]=3  another = 2
+            int another = target - nums[i];
+
+            //index = 3
+            Integer index = storeNums.get(another);
+
+            //可以在map里面找到
+            if (null != index) {
+                result[0] = index;
+                result[1] = i;
+                break;
+            } else {
+                //找不到就放入值和数组下标
+                storeNums.put(nums[i], i);
+            }
+        }
+
+        return result;
+    }
 }

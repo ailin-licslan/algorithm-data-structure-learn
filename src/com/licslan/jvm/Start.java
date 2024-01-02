@@ -3,9 +3,14 @@ package com.licslan.jvm;
 /**
  * @author LICSLAN
  * https://www.processon.com/view/link/5fbbc7dae0b34d59cf8641c7
- * */
+ */
 public class Start {
-    public static void main(String[] args) {People p = new People(); p.say();}
+
+    public static int test = 100;
+    public static void main(String[] args) {
+        People p = new People();
+        p.say();
+    }
 }
 
 /**
@@ -18,51 +23,31 @@ public class Start {
  * 6、double是双浮点类型，占8字节；
  * 7、char占2字节；
  * 8、boolean占1字节
- * */
+ */
 
-class People{
+class People {
     //基本数据类型  4 byte
     private int age;
     //引用数据类型
     private String name;
     //基本数据类型  1 byte
     private boolean sex;
-    public void say(){
-        Boolean test = false;System.out.println(test);if(isOk()) {}
+
+    public void say() {
+        Boolean test = false;
+        System.out.println(test);
+        if (isOk()) {
+        }
     }
-    public Boolean isOk(){Boolean ok = false; return ok;}
+
+    public Boolean isOk() {
+        Boolean ok = false;
+        return ok;
+    }
+
+    static {
+        System.out.println("初始化~");
+    }
+    public static int a = 0;
 }
 
-
-
-
-
-
-
-
-
-
-//    public int getAge() {
-//        return age;
-//    }
-//
-//    public void setAge(int age) {
-//        this.age = age;
-//    }
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public boolean isSex() {
-//        return sex;
-//    }
-//
-//    public void setSex(boolean sex) {
-//        this.sex = sex;
-//    }
-//}
