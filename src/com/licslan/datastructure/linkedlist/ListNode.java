@@ -5,7 +5,7 @@ package com.licslan.datastructure.linkedlist;
 /**
  * @author licslan
  */
-public class ListNode {
+public class ListNode implements Comparable<ListNode> {
 
     public int val;
     public ListNode next;
@@ -43,5 +43,10 @@ public class ListNode {
         }
         s.append("NULL");
         return s.toString();
+    }
+
+    @Override
+    public int compareTo(ListNode o) {
+        return 0;
     }
 }

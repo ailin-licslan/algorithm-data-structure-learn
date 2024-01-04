@@ -1,4 +1,7 @@
-package com.licslan.interview.hot100;
+package com.licslan.interview.link;
+
+
+import com.licslan.datastructure.linkedlist.ListNode;
 
 /**
  * 86. 分隔链表
