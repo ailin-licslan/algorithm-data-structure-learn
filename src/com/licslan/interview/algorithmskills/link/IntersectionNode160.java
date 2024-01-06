@@ -1,4 +1,4 @@
-package com.licslan.interview.link;
+package com.licslan.interview.algorithmskills.link;
 
 import com.licslan.interview.hot100.utils.ListNode;
 

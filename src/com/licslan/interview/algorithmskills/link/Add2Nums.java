@@ -1,4 +1,4 @@
-package com.licslan.interview.link;
+package com.licslan.interview.algorithmskills.link;
 
 import java.util.ArrayList;
 import java.util.List;

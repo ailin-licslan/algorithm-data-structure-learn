@@ -1,4 +1,4 @@
-package com.licslan.interview.hot100;
+package com.licslan.interview.algorithmskills.array;
 
 import java.util.*;
 
